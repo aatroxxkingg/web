@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnambooking - Đặt tour du lịch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+
+<body>
+
+    <header>
+        <div class="topbar">
+            <div class="container">
+                <div class="lefttop col-10">
+                    <div class="header-logo"><img src="/img/banner_logo.jpg" alt=""></div>
+                </div>
+                <div class="righttop col-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    <p>03380 79184</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <menu>
+        <div class="menu">
+            <div class="container">
+                <div class="taskbar col-10">
+                    <p><a href=""><img src="/img/icon_promo.svg" alt=""> Khuyến mãi</a></p>
+                    <p><a href=""><img src="/img/icon_order.svg" alt=""> Đặt chỗ của tôi</a></p>
+                    <p><a href=""><img src="/img/icon_help.svg" alt=""> Trung tâm trợ giúp</a></p>
+                    <p><a href=""><img src="/img/icon_coop.svg" alt=""> Hợp tác với chúng tôi</a></p>
+                    <p><a href=""><img src="/img/icon_app.svg" alt=""> App Vietnam Booking</a></p>
+                    <p><a href=""><img src="/img/icon_search.svg" alt=""> Tìm kiếm</a></p>
+                </div>
+                <div class="user col-2">
+                    <i class="bi bi-person-circle"></i>
+                    <p><a href="login.html">Đăng nhập</a></p>
+                    <p><a href="">Đăng ký</a></p>
+                </div>
+                <div class="menu-apear col-12">
+                    <div class="list"><i class="bi bi-list"></i></div>
+                    <nav class="thanh-menu">
+                        <li><a href="">Vé máy bay</a></li>
+                        <li><a href="">Du lịch</a></li>
+                        <li><a href="">Khách sạn</a></li>
+                        <li><a href="">Visa</a></li>
+                        <li><a href="">Combo</a></li>
+                        <li><a href="">Định cư</a></li>
+                        <li><a href="">Flash Sale</a></li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <img id="hinh" src="/img/banner.jpg" alt="">
+            <i id="next" class="bi bi-arrow-left-circle-fill" onclick="prev()"></i>
+            <i id="back" class="bi bi-arrow-right-circle-fill" onclick="next()"></i>
+            <div class="station">
+                <span id="0">.</span>
+                <span id="1">.</span>
+                <span id="2">.</span>
+                <span id="3">.</span>
+                <span id="4">.</span>
+                <span id="5">.</span>
+                <span id="6">.</span>
+                <span id="7">.</span>
+            </div>
+        </div>
+        <div class="search">
+            <div class="container">
+                <div class="box col-8">
+                    <h2>Du lịch năm châu, không đâu rẻ bằng</h2>
+                    <p>Nhập địa điểm bạn muốn đến</p>
+                    <div class="box-search">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <input type="text" name="" id="">
+                    </div>
+                    <button>Tìm kiếm</button>
+                </div>
+            </div>
+        </div>
+        <section class="more">
+            <div class="container">
+                <div class="tour col-12">
+                    <li class="have"><a href="">
+                            <img src="/img/tour-du-lich-nuoc-ngoai.png" alt="">
+                            <p>Tour nước ngoài</p>
+                        </a></li>
+                    <li class="have"><a href="">
+                            <img src="/img/tour-du-lich-trong-nuoc.png" alt="">
+                            <p> Tour trong nước</p>
+                        </a></li>
+                    <li class="have"><a href="">
+                            <img src="/img/tour-du-lich-he.png" alt="">
+                            <p> Tour hè</p>
+                        </a></li>
+                    <li class="have"><a href="">
+                            <img src="/img/Team-building.png" alt="">
+                            <p> Tour đoàn</p>
+                        </a></li>
+                    <li><a href="">
+                            <img src="/img/tour-le-2-9.png" alt="">
+                            <p> Tour lễ 2/9</p>
+                        </a></li>
+                </div>
+            </div>
+        </section>
+    </menu>
+    <main>
+        <nav class="intro">
+            <div class="container">
+                <h1>Tour giờ chót</h1>
+                <h4><a href=""><a href="">Xem tất cả <i class="bi bi-chevron-double-right"></i></a></a></h4>
+                <section class="last-tour">
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/Tour-Sapa-3-ngay-2-dem-2023-300x194.png" class="image">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Miền Bắc, Sapa</div>
+                        <div class="information">
+                            <p><a href="">Tour Sapa 3 ngày 2 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 2 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hà Nội</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng ngày</p>
+                            <p class="price">2,490,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-nha-trang-3-ngay-2-dem-2-2023-300x194.png">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Nha Trang</div>
+                        <div class="information">
+                            <p><a href="">Tour Nha Trang 3 ngày 2 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 2 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Nha Trang</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng ngày</p>
+                            <p class="price">2,990,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-da-nang-hoi-an-4-ngay-3-dem-2023-300x194.png">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Đà Nẵng, Hội An, Miền Trung</div>
+                        <div class="information">
+                            <p><a href="">Tour Đà Nẵng Hội An 4 ngày 3 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>4 ngày 3 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Đà Nẵng</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng ngày</p>
+                            <p class="price">2,690,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-bali-4-ngay-3-dem-2023-300x194.png">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Indonesia</div>
+                        <div class="information">
+                            <p><a href="">Tour Bali 4 ngày 3 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>4 ngày 3 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Liên hệ</p>
+                            <p class="price">12,990,000 VNĐ</p>
+                        </div>
+                    </article>
+                </section>
+                <h1>Du lịch giá rẻ</h1>
+                <h4><a href=""><a href="">Xem tất cả <i class="bi bi-chevron-double-right"></i></a></a></h4>
+                <section class="sale-tour">
+                    <article class="tour2 col-4 col-s-12">
+                        <img src="/img/tour-da-lat-3-ngay-3-dem-1-2023-300x194.jpg">
+                        <div class="middle">
+                            <div class="text2"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Đà Lạt</div>
+                        <div class="information">
+                            <p><a href="">Tour Đà Lạt 3 ngày 3 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 3 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Tối thứ 5 hàng tuần</p>
+                            <p class="price"> 2,390,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour2 col-4 col-s-12">
+                        <img src="/img/tour-mien-tay-1-ngay-vietnambooking-2023-300x194.png">
+                        <div class="middle">
+                            <div class="text2"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Miền Tây</div>
+                        <div class="information">
+                            <p><a href="">Tour Miền Tây 1 ngày Vietnambooking</a></p>
+                            <p><i class="bi bi-clock-fill"></i>Trong ngày</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng ngày</p>
+                            <p class="price">699,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour2 col-4 col-s-12">
+                        <img src="/img/tour-phu-quy-3n3d-2023-300x194.png">
+                        <div class="middle">
+                            <div class="text2"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh, Phan Thiết</div>
+                        <div class="information">
+                            <p><a href="">Tour Phú Quý 3 ngày 3 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 3 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng ngày</p>
+                            <p class="price">3,890,000 VNĐ</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </nav>
+        <nav class="main-conten">
+            <div class="container">
+                <div class="nametour col-10">
+                    TOUR TRONG NƯỚC
+                </div>
+                <div class="see-all col-2">
+                    <a href="">Xem tất cả <i class="bi bi-chevron-double-right"></i></a>
+                </div>
+                <section class="last-tour">
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-mua-he-da-nang-3-ngay-2-dem-300x200.png">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Đà Nẵng, Hội An, Miền Trung</div>
+                        <div class="information">
+                            <p><a href="">Tour du lịch Đà Nẵng hè 3 ngày 2 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 2 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Đà Nẵng</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng tuần</p>
+                            <p class="price"> 3,590,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-dong-bang-song-cuu-long-10-2023-300x194.png">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Cần Thơ, Miền Tây</div>
+                        <div class="information">
+                            <p><a href="">Tour Đồng bằng sống Cửu Long 4N3Đ</a></p>
+                            <p><i class="bi bi-clock-fill"></i>4 ngày 3 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Thứ 2, thứ 5 hàng tuần</p>
+                            <p class="price"> 4,290,000đ VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/Tour-da-nang-ba-na-hoi-an-ngu-hanh-son-tu-ha-noi-2-2023-300x194.jpg">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Đà Nẵng</div>
+                        <div class="information">
+                            <p><a href="">Tour Đà Nẵng - Ngũ Hành Sơn 3N2Đ</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 2 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng ngày</p>
+                            <p class="price"> 6,990,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/Tour-Sapa-3-ngay-2-dem-2023-300x194.png">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Miền Bắc, Sapa</div>
+                        <div class="information">
+                            <p><a href="">Tour Sapa 3 ngày 2 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 2 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hà Nội</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng ngày</p>
+                            <p class="price"> 2,490,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-da-lat-3-ngay-3-dem-1-2023-300x194.jpg">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Đà Lạt</div>
+                        <div class="information">
+                            <p><a href="">Tour Đà Lạt 3 ngày 3 dêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 3 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Tối thứ 5 hàng tuần</p>
+                            <p class="price"> 2,390,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/Tour-da-nang-ba-na-hoi-an-ngu-hanh-son-tu-tphcm-2023-300x194.png">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Đà Nẵng</div>
+                        <div class="information">
+                            <p><a href="">Tour Đà Nẵng - Ngũ Hành Sơn từ TP.HCM</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 2 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng ngày</p>
+                            <p class="price"> 6,290,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/ha-tien-phu-quoc-3n3d-2023-300x194.png">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Kiên Giang, Miền Nam, Phú Quốc</div>
+                        <div class="information">
+                            <p><a href="">Tour du lịch Hà Tiên - Phú Quốc 3N3Đ</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 3 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chi Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Thứ 5 hàng tuần</p>
+                            <p class="price"> 3,986,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-du-lich-nha-trang-da-lat-2023-300x194.png">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Đà Lạt, Nha Trang</div>
+                        <div class="information">
+                            <p><a href="">Tour Nha Trang - Đà Lạt 4 ngày 3 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>4 ngày 3 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Nha Trang</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Thứ 5 hàng tuần</p>
+                            <p class="price"> 4,290,000 VNĐ</p>
+                        </div>
+                    </article>
+                </section>
+                <div class="nametour col-10">
+                    TOUR QUỐC TẾ
+                </div>
+                <div class="see-all col-2">
+                    <a href="">Xem tất cả <i class="bi bi-chevron-double-right"></i></a>
+                </div>
+                <section class="last-tour">
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-du-lich-nhat-ban-5-ngay-5-dem-1-300x194.jpg">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Nhật Bản</div>
+                        <div class="information">
+                            <p><a href="">Tour du lịch Nhật Bản 5N5Đ</a></p>
+                            <p><i class="bi bi-clock-fill"></i>5 ngày 5 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng tuần</p>
+                            <p class="price"> 35,639,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-seagame-32-1-300x194.jpg">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Campuchia</div>
+                        <div class="information">
+                            <p><a href="">Tour Seagame 32 2 ngày 1 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>2 ngày 1 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: 3, 8, 11/8</p>
+                            <p class="price"> 3,359,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-singapore-malaysia-tu-ha-noi-5-ngay-4-dem-3-300x194.jpg">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Malaysia, Singapore</div>
+                        <div class="information">
+                            <p><a href="">Tour Singapore, Malaysia 5N4Đ</a></p>
+                            <p><i class="bi bi-clock-fill"></i>5 ngày 4 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hà Nội</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng tháng</p>
+                            <p class="price"> 11,488,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-ba-li-4-ngay-3-dem-tu-ha-noi-5-300x194.jpg">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Indonesia</div>
+                        <div class="information">
+                            <p><a href="">Tour Bali 4 ngày 3 đêm từ Hà Nội</a></p>
+                            <p><i class="bi bi-clock-fill"></i>4 ngày 3 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hà Nội</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Liên hệ</p>
+                            <p class="price"> 11,488,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tou-du-lich-maldives-10-10-2017-3-300x200.jpg">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Maldives</div>
+                        <div class="information">
+                            <p><a href="">Tour thiên đường Maldives 5N4Đ</a></p>
+                            <p><i class="bi bi-clock-fill"></i>5 ngày 4 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: 15/7 & 15/8</p>
+                            <p class="price"> 44,890,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/tour-dulich-hanquoc-5n4d-don-nam-moi-tai-xuso-kim-chi-08102018-17-300x173.jpg">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Châu Á, Hàn Quốc</div>
+                        <div class="information">
+                            <p><a href="">Tour Hàn Quốc 5 ngày 4 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>5 ngày 4 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng tuần</p>
+                            <p class="price">18,990,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/du-lich-dai-loan-thang-5-3.jpg">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Đài Loan</div>
+                        <div class="information">
+                            <p><a href="">Tour Đài Loan 3 ngày 2 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>3 ngày 2 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hà Nội</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng tuần</p>
+                            <p class="price"> 4,490,000 VNĐ</p>
+                        </div>
+                    </article>
+                    <article class="tour-travel col-3 col-s-12">
+                        <img src="/img/trai-nghiem-tai-nhat-ban-3.jpg">
+                        <div class="middle">
+                            <div class="text"><a href="">Đặt Tour</a> </div>
+                        </div>
+                        <div class="location"><i class="bi bi-geo-alt-fill"></i>Nhật Bản</div>
+                        <div class="information">
+                            <p><a href="">Tour Nhật Bản 4 ngày 5 đêm</a></p>
+                            <p><i class="bi bi-clock-fill"></i>4 ngày 5 đêm</p>
+                            <p><i class="bi bi-geo-alt-fill"></i>Hồ Chí Minh</p>
+                            <p><i class="bi bi-calendar-fill"></i>KH: Hàng tuần</p>
+                            <p class="price"> 15,990,000 VNĐ</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </nav>
+    </main>
+    <aside>
+        <div class="container">
+            <div class="blog">
+                <div class="title col-10">
+                    BLOG DU LỊCH
+                </div>
+                <div class="see-all col-2">
+                    <a href="">Xem tất cả <i class="bi bi-chevron-double-right"></i></a>
+                </div>
+                <section class="blog">
+                    <article class="main-ar col-6 col-s-12">
+                        <img src="/img/thoi-tiet-han-quoc-thang-9-11.jpg" alt="">
+                        <p><a href="">Thời tiết Hàn Quốc tháng 9 - Thời điểm vàng vi cu đến xứ sở kim chi</a></p>
+                        <p>Thời tiết Hàn Quốc tháng 9 ra sao là vấn đề được rất nhiều tín đồ du lịch quan tâm. Liệu đây
+                            có phải là thời điểm thích hợp để vi vu đến xứ sở kim chi? Để tìm được câu trả lời, hãy theo
+                            dõi bài viết dưới đây nhé! Chắc chắn đây sẽ là những thông tin vô cùng hữu ích dành cho bạn.
+                        </p>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/han-quoc-co-gi-1.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Hàn Quốc có gì? Những điểm đến bạn không thể bỏ qua khi du lịch Hàn Quốc</a>
+                            </h3>
+                            <p>Nhiều người muốn du lịch Hàn Quốc nhưng lại chưa biết Hàn Quốc có gì đặc sắc. Tại xứ sở
+                                kim chi có rất nhiều điều để bạn khám phá. Không phải tự nhiên mà Hàn Quốc luôn nằm
+                                trong top điểm đến hàng ...
+                            </p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/canh-dep-o-han-quoc-11-300x200.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">List cảnh đẹp ở Hàn Quốc được giới trẻ check-in nhiều nhất</a></h3>
+                            <p>Những cảnh đẹp ở Hàn Quốc nhiều vô số kể. Đó là lý do vì sao điểm đến này lại thu hút du
+                                khách đến thế. Cùng với đó là cơ sở vật chất, hạ tầng hiện đại, đất nước phát triển, trù
+                                phú. Bạn đã từng ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/tour-du-lich-thai-lan-cao-cap-1-300x200.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Vi vu tour du lịch Thái Lan cao cấp cùng các điểm đến đầy hấp dẫn, lôi cuốn
+                                </a></h3>
+                            <p>Thái Lan được mệnh danh là thiên đường du lịch của những tín đồ thích xê dịch. Tour du
+                                lịch Thái Lan cao cấp nhất định sẽ mang đến cho bạn những trải nghiệm khó quên. Hãy cùng
+                                tìm hiểu xem đất ...</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="aside-news">
+                <div class="title col-10">
+                    TIN TỨC
+                </div>
+                <div class="see-all col-2">
+                    <a href="">Xem tất cả <i class="bi bi-chevron-double-right"></i></a>
+                </div>
+                <section class="news">
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/le-hoi-du-lich-chua-huong-2023-co-gi-moi-1.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">[Cập nhật mới nhất] Lễ hội du lịch Chùa Hương 2023 có gì mới?</a></h3>
+                            <p>Lễ hội du lịch Chùa Hương 2023 có gì mới? Cùng Vietnam Booking cập nhật ngay tin tức mới
+                                nhất dành cho du khách có dự định du lịch hành hương đến lễ hội ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/8-trao-luu-du-lich-se-phat-trien-tren-the-gioi-năm-2023-12-1.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Lưu lại 8 trào lưu du lịch sẽ phát triển trên thế giới năm 2023</a></h3>
+                            <p>8 trào lưu du lịch sẽ phát triển trên thế giới năm 2023 đang là một chủ đề được nhiều
+                                người chú ý. Thế nhưng bạn đã biết các trào lưu này là gì chưa? Nếu ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/tour-han-quoc-tet-2024-20.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Sắc màu ngàn hoa rực rỡ khoe sắc cùng tour Hàn Quốc Tết 2024</a></h3>
+                            <p>Tour Hàn Quốc Tết 2024 những năm vừa qua đã trở thành xu hướng được lựa chọn của nhiều du
+                                khách mỗi độ xuân về. Hàn Quốc vào xuân như bừng tỉnh sức sống ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/bao-hiem-du-lich-co-chi-tra-dieu-tri-covid-2.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Tổng hợp thông tin về Bảo hiểm Du lịch có chi trả điều trị Covid-19</a></h3>
+                            <p>Hiện nay, để hỗ trợ du khách từ quốc tế vào Việt Nam, nhiều gói Bảo hiểm Du lịch có chi
+                                trả điều trị Covid đã được ra đời. Đúng như tên gọi, bên cạnh các ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/le-hoi-te-nuoc-campuchia-1.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Khám phá nét đẹp văn hoá của lễ hội té nước Campuchia</a></h3>
+                            <p>Lễ hội té nước Campuchia là một trong những lễ hội lớn bậc nhất Campuchia. Vào mùa lễ
+                                hội, lượng khách du lịch thường kéo đến Campuchia rất đông. Trong ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/le-hoi-te-nuoc-lao-5-1.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Lễ hội té nước Lào và những điều thú vị bạn chưa biết</a></h3>
+                            <p>Lễ hội té nước Lào là một trong những lễ hội mang ý nghĩa vô cùng thiêng liêng đối với
+                                người Lào. Theo chiều dài lịch sử nước Lào, lễ hội này dần trở thành ...</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="question-travel">
+                <div class="title col-10">
+                    HỎI ĐÁP VỀ DU LỊCH
+                </div>
+                <div class="see-all col-2">
+                    <a href="">Xem tất cả <i class="bi bi-chevron-double-right"></i></a>
+                </div>
+                <section class="question">
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/dac-san-da-lat-2.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Những món đặc sản Đà Lạt nên mua về làm quà cho bạn bè, người thân</a></h3>
+                            <p>Nhiều người đi Đà Lạt thường chọn mua những món đặc sản Đà Lạt làm quà tặng người thân,
+                                bạn bè. Thành phố ngàn hoa không thiếu những món đồ để bạn lựa ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/vivid-sydney-2023-1.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Tưng bừng lễ hội ánh sáng Vivid Sydney 2023 đầy rực rỡ tại Úc</a></h3>
+                            <p>Lễ hội ánh sáng Vivid Sydney 2023 là lễ hội vô cùng quen thuộc với những người yêu thích
+                                xứ sở chuột túi. Rất nhiều người đã kéo nhau đến Úc du lịch để xem ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/le-quoc-khanh-nam-nay-5.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Lễ Quốc Khánh năm nay và những thông tin quan trọng cần biết</a></h3>
+                            <p>Lễ Quốc Khánh năm nay là dịp lễ lớn được rất nhiều người mong chờ. Đây sẽ là khoảng thời
+                                gian vô cùng hợp lý và tuyệt vời để bạn lên kế hoạch và Đặt tour ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/chi-phi-di-uc-tu-tuc-3-1.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Tất tần tật thông tin về chi phí đi Úc tự túc mà bạn nên biết</a></h3>
+                            <p>Úc là đất nước có diện tích được xem là lớn thứ sáu trên thế giới. Cùng với đó là những
+                                bề dày lịch sử và văn hóa vô cùng độc đáo. Chính vì lẽ đó mà quốc ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/mua-he-nen-du-lich-o-dau-12.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Mùa hè nên du lịch ở đâu để có kỷ niệm tuyệt vời cùng những người mình yêu
+                                    thương
+                                </a></h3>
+                            <p>Những em học sinh dần bước vào mùa kết thúc năm học. Một mùa hè đầy sôi động đang ở sát
+                                gần kề. Vậy bạn đã có thử nghĩ xem mùa hè nên du lịch ở đâu chưa? ...</p>
+                        </div>
+                    </article>
+                    <article class="semi-ar col-6 col-s-12">
+                        <div class="semi-ar-img">
+                            <img src="/img/lich-nghi-he-2023-2.jpg" alt="">
+                        </div>
+                        <div class="semi-ar-content">
+                            <h3><a href="">Thông tin chi tiết về lịch nghỉ hè 2023 của 63 tỉnh thành</a></h3>
+                            <p>Ve kêu râm ran, hoa phượng nở đỏ rực góc trời báo hiệu hè đã về. Lịch nghỉ hè 2023 của 63
+                                tỉnh thành sẽ cung cấp cho bạn những thông tin chi tiết nhất về ...</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="start-footer">
+            <div class="container">
+                <section>
+                    <article class="lienhe col-6 col-s-12">
+                        <p>Liên hệ với chúng tôi (Hỗ trợ 24/7)</p>
+                        <p><i class="bi bi-telephone"></i>Đặt vé máy bay <a href="">0338079184</a></p>
+                        <p><i class="bi bi-telephone"></i>Đặt Tour du lịch <a href="">0338079184</a></p>
+                        <p><i class="bi bi-telephone"></i>Đặt phòng khách sạn <a href="">0338079184</a></p>
+                        <p><i class="bi bi-telephone"></i>Tư vấn xin Visa <a href="">0338079184</a></p>
+                        <p>Tổng đài hỗ trợ gọi từ nước ngoài về Việt Nam</p>
+                        <p><a href="">+0338079184</a></p>
+                    </article>
+                    <article class="about col-2">
+                        <p>Về chúng tôi</p>
+                        <p><a href="">Giới thiệu</a></p>
+                        <p><a href="">Liên hệ</a></p>
+                        <p><a href="">Truyền thông</a></p>
+                        <p><a href="">Các đơn vị hợp tác</a></p>
+                        <p><a href="">Chính sách bảo mật</a></p>
+                        <p><a href="">Điều khoản sử dụng</a></p>
+                    </article>
+                    <article class="about col-2">
+                        <p>Sản phẩm</p>
+                        <p><a href="">Vé máy bay</a></p>
+                        <p><a href="">Tour du lịch</a></p>
+                        <p><a href="">Đặt khách sạn</a></p>
+                        <p><a href="">Combo tiết kiệm</a></p>
+                        <p><a href="">Visa</a></p>
+                        <p><a href="">Cách đặt chỗ</a></p>
+                    </article>
+                    <article class="about col-2">
+                        <p>Khác</p>
+                        <p><a href="">Tuyển dụng</a></p>
+                        <p><a href="">Xem lại đơn hàng</a></p>
+                        <p><a href="">Hướng dẫn thanh toán</a></p>
+                        <p><a href="">Chăm sóc khách hàng</a></p>
+                        <p><a href="">Đăng ký nhận bản tin</a></p>
+                        <p><a href="">Đăng ký đối tác</a></p>
+                    </article>
+                    <article class="logo-footer col-4 col-s-12">
+                        <img src="/img/banner_logo.jpg" alt="">
+                    </article>
+                    <article class="gps">
+                        <div class="conscious col-3 col-s-12">
+                            <p><i class="bi bi-geo-alt-fill"></i>HỒ CHÍ MINH</p>
+                        </div>
+                        <div class="city col-5">
+                            <p><i class="bi bi-circle-fill"></i>190-192 Trần Quý, Phường 6, Quận 11, Tp. Hồ Chí Minh</p>
+                            <p><i class="bi bi-circle-fill"></i>54 Phạm Hồng Thái, Bến Thành, Quận 1, Tp. Hồ Chí Minh
+                            </p>
+                            <p><i class="bi bi-circle-fill"></i>164 Lê Thánh Tôn, Phường Bến Thành, Quận 1, TP. Hồ Chí
+                                Minh</p>
+                        </div>
+                        <div class="conscious col-3 col-s-12">
+                            <p><i class="bi bi-geo-alt-fill"></i>HÀ NỘI</p>
+                        </div>
+                        <div class="city col-5">
+                            <p><i class="bi bi-circle-fill"></i>30 Phan Chu Trinh, Quận Hoàn Kiếm, TP. Hà Nội</p>
+                        </div>
+                    </article>
+                    <div class="download col-3 col-s-12">
+                        <p>Tải app Vietnam Booking</p>
+                    </div>
+                    <div class="ggplayy col-2 col-s-2">
+                        <img src="/img/icon_playstore.png" alt="">
+                    </div>
+                    <div class="appstore col-2 col-s-2">
+                        <img src="/img/icon_appstore.png" alt="">
+                    </div>
+                    <div class="conection col-2 col-s-3">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div class="certificate col-2">
+                        <img src="/img/icon_bo_cong_thuong.png" alt="">
+                    </div>
+                    <div class="medal col-1">
+                        <img src="/img/_dmca_premi_badge_1.png" alt="">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="end">
+            <p>©2023Vietnambooking. All rights reserved - Công Ty Cổ Phần Việt Nam Booking - Mã số thuế: 0308042348
+            </p>
+            <p>Người phụ trách nội dung: Nguyễn Phạm Thanh Sang - Trưởng Ban Biên Tập - Email: sangnptps33890@fpt.edu.vn
+            </p>
+            <p>Đây là đồ án học tập của Sang, không mua bán trao đổi dưới mọi hình thức!</p>
+        </div>
+
+    </footer>
+
+</body>
+<script>
+    var arr_hinh = [
+        '/img/banner.jpg',
+        '/img/banner2.jpg',
+        '/img/banner3.jpg',
+        '/img/banner4.jpg',
+        '/img/banner5.jpg',
+        '/img/banner6.jpg',
+        '/img/banner7.jpg',
+        '/img/banner8.jpg',
+
+    ]
+    var index = 0;
+    function prev() {
+        index--;
+        if (index < 0) index = arr_hinh.length - 1;
+        document.getElementById('hinh').src = arr_hinh[index];
+        document.getElementById('0').style.color = 'white';
+        document.getElementById('1').style.color = 'white';
+        document.getElementById('2').style.color = 'white';
+        document.getElementById('3').style.color = 'white';
+        document.getElementById('4').style.color = 'white';
+        document.getElementById('5').style.color = 'white';
+        document.getElementById('6').style.color = 'white';
+        document.getElementById('7').style.color = 'white';
+        document.getElementById(index).style.color = '#1598d4';
+    }
+    function next() {
+        index++;
+        if (index == arr_hinh.length) index = 0;
+        document.getElementById('hinh').src = arr_hinh[index];
+        document.getElementById('0').style.color = 'white';
+        document.getElementById('1').style.color = 'white';
+        document.getElementById('2').style.color = 'white';
+        document.getElementById('3').style.color = 'white';
+        document.getElementById('4').style.color = 'white';
+        document.getElementById('5').style.color = 'white';
+        document.getElementById('6').style.color = 'white';
+        document.getElementById('7').style.color = 'white';
+        document.getElementById(index).style.color = '#1598d4';
+    } setInterval('next()', 3000);
+    $(document).ready(function () {
+        $(".list").click(function () {
+            $(".thanh-menu").toggle();
+        });
+    });
+</script>
+
+</html>
